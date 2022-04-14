@@ -845,6 +845,8 @@ find_path(QWT_INCLUDE_DIR NAMES qwt.h PATHS
   /usr/include
   /usr/local/include
   /usr/local/lib/qwt.framework/Headers
+  /usr/local/opt/qwt-qt5/include
+  /usr/local/opt/qwt-qt5/lib/qwt.framework/Headers
   ${QWT_WIN_INCLUDE_DIR}
 
   PATH_SUFFIXES qwt qwt5
@@ -853,6 +855,8 @@ find_path(QWT_INCLUDE_DIR NAMES qwt.h PATHS
 find_library(QWT_LIBRARY NAMES qwt-qt5 qwt PATHS
   /usr/local/lib
   /usr/local/lib/qwt.framework
+  /usr/local/opt/qwt-qt5/lib
+  /usr/local/opt/qwt-qt5/lib/qwt.framework
   ${QWT_WIN_LIBRARY_DIR}
 )
 
